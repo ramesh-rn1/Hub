@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -42,6 +44,9 @@ gem 'acts_as_votable', '~> 0.10.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :production do
+	gem 'pg', '~> 0.18.4'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

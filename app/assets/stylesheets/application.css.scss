@@ -1,11 +1,10 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 
-/*
- *= require_self
- */
 
 body {
-	font-family: "Proxima Nova";
+	font-family: 'Open Sans';
 	font-weight: 100;
 }
 
@@ -64,6 +63,7 @@ header {
 		}
 	}
 }
+
 
 @import 'home.css.scss';
 @import 'post.scss';
